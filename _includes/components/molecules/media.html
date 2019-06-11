@@ -1,0 +1,29 @@
+<div class="media">
+  {% if include.hasLabel == "no-label" %}
+  <div class="media-left">
+    <img class="media-object img-circle" src="{{ site.baseurl }}/Images/avatar.png" alt="" width="32" height="32" />
+  </div>
+  <div class="media-content media-middle">
+    <div class="media-body">
+      {% include components/molecules/textarea-field.html 
+        placeholder="Comments (Optional)"
+        hasLabel="no-label"
+      %}
+      <a class="btn btn-success" href="">Approve</a>
+      <a class="btn btn-danger" href="">Reject</a>
+      <a class="btn btn-default" href="">Resubmit</a>
+      <hr class="dashed">
+      <fieldset class="form-group">
+        <label for="">Do you want to redirect to another manager</label>
+        <div class="input-group">
+          {% include components/atoms/select.html 
+            placeholder="Select Manager"
+          %}
+          <span class="input-group-btn">
+            <a class="btn btn-primary" href="">Redirect</a>
+          </span>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>

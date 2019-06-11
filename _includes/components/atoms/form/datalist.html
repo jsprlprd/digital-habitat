@@ -1,0 +1,10 @@
+<input class="form-control {{include.isInputLarge }} {{ include.isInputRequired }}" type="text" list="{{ include.input-name }}" autocomplete="off" placeholder="{{ include.input-placeholder }}">
+<datalist id="{{ include.input-name }}">
+  <select class="form-control {{include.isInputLarge }} {{ include.isInputRequired }}" id="{{ include.input-name }}" name="{{ include.input-name }}">
+    <option value="" selected="" disabled="">{{ include.input-placeholder }}</option>
+    {% assign lists = include.list-value-name | sort:"order" %}
+    {% for list in lists  %}
+      <option value="{{ list.text }}{{ list.full-name }}{{ list.name }}">{{ list.value }}{{ list.full-name }}{{ list.name }}</option>
+    {% endfor %}
+  </select>
+</datalist>

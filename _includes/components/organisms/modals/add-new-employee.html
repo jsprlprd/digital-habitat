@@ -1,0 +1,135 @@
+<div class="modal modal-responsive" id="add-new-employee">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title h4">Add New Employee</h6>
+        <button class="close" data-dismiss="modal" type="button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Personal Info</p>
+        {% include components/organisms/forms/full-name.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Full Name"
+          input-size="col-lg-6"
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        <div class="form-group row">
+          <label class="form-label col-lg-3" for="">Phone</label>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
+              </span>
+              <input class="form-control" type="text" placeholder="912 345 6789">
+            </div>
+          </div>
+        </div>
+
+        {% include components/molecules/form-group/select.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Branch"
+          input-size="col-lg-6"
+          input-name="branch"
+          input-value=""
+          input-placeholder="Select Branch"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+          list-value-name=site.branches
+        %}
+
+        {% include components/molecules/form-group/input.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Calendar Color"
+          input-size="col-lg-6"
+          input-type="color"
+          input-name="calendar-color"
+          input-value=""
+          input-placeholder=""
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+
+        <div class="form-group row">
+          <label class="form-label col-lg-3" for="">With Login?</label>
+          <div class="col-lg-6">
+            <label class="form-switch">
+              <input class="form-switch-input form-switch-right" type="checkbox">
+              <span class="form-switch-slider"></span>
+              <!-- <span class="form-switch-label"></span> -->
+            </label>
+          </div>
+        </div>
+
+        <hr class="dashed">
+        <div class="d-flex align-items-start align-items-center justify-content-between mb-3">
+        <p class="lead">Login Details</p>
+
+        </div>
+        {% include components/molecules/form-group/input.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Email"
+          input-size="col-lg-6"
+          input-type="email"
+          input-name="email"
+          input-value=""
+          input-placeholder="name@company.com"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/molecules/form-group/input.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Password"
+          input-size="col-lg-6"
+          input-type="password"
+          input-name="password"
+          input-value=""
+          input-placeholder="Choose a password"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-link" href="">Discard</a>
+        <a class="btn btn-primary" href="">Save Changes</a>
+      </div>
+    </div>
+  </div>
+</div>

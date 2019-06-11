@@ -1,0 +1,22 @@
+<div class="list-group-item list-group-item-action" id="{{ include.input-name }}">
+  <div class="form-group row">
+    {% include components/atoms/form/label.html %}
+    <div class="{{ include.input-size }}">
+      <div class="list-group-item-view-mode">
+        {% include components/atoms/form/plaintext.html %}
+      </div>
+      <div class="list-group-item-edit-mode">
+        {% include components/atoms/form/datalist.html %}
+        {% if include.hasFormHelper == "none" %}
+        {% else %}
+          {% include components/atoms/form/helper.html %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="list-group-item-btn">
+    <button class="btn btn-link btn-edit"><i class="fas fa-pen"></i></button>
+    <button class="btn btn-link btn-close"><i class="fas fa-times"></i></button>
+    <button class="btn btn-link btn-check"><i class="fas fa-check"></i></button>
+  </div>
+</div>

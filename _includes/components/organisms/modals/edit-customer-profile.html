@@ -1,0 +1,130 @@
+<div class="modal modal-responsive" id="edit-customer-profile">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title h4">Edit Customer Profile</h6>
+        <button class="close" data-dismiss="modal" type="button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Personal Info</p>
+        {% include components/organisms/forms/full-name.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Full Name"
+          input-size="col-lg-6"
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/organisms/forms/birthday-select.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-md-3"
+          form-label-text="Birthday (Optional)"
+          input-size="col-lg-6"
+          input-type=""
+          input-name="birthday"
+          input-value=""
+          input-placeholder="Enter Email Address"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/molecules/form-group/textarea.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Notes"
+          input-size="col-lg-6"
+          input-type=""
+          input-name="notes"
+          input-value=""
+          input-placeholder="Enter Notes"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        <!-- <div class="form-group row">
+          <label class="form-label col-lg-3" for="">Profile Photo</label>
+          <div class="col-lg-6">
+            <div class="media">
+              <div class="mr-3">
+                <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/default-avatar.png" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <div><b>Set your profile photo</b><br><a href="">Upload photo</a></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <hr class="dashed">
+        <p class="lead">Contact Info</p>
+        <div class="form-group row">
+          <label class="form-label col-lg-3" for="">Phone</label>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-btn input-group-prepend">
+                <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
+              </span>
+              <input class="form-control" type="text" placeholder="912 345 6789">
+            </div>
+            <div class="form-check form-check-inline mt-2">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">SMS</label>
+            </div>
+            <div class="form-check form-check-inline mt-2">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">WhatsApp</label>
+            </div>
+          </div>
+        </div>
+        {% include components/molecules/form-group/input.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Email"
+          input-size="col-lg-6"
+          input-type="email"
+          input-name="email"
+          input-value=""
+          input-placeholder="name@company.com"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        <div class="form-group row">
+          <label class="form-label col-lg-3" for="">Notifications</label>
+          <div class="col-lg-6 align-self-center">
+            <label class="form-switch form-switch-left">
+              <input class="form-switch-input" type="checkbox">
+              <span class="form-switch-slider"></span>
+              <span class="form-switch-label form-switch-label-static">Enable</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-link" href="">Discard</a>
+        <a class="btn btn-primary" href="">Save Changes</a>
+      </div>
+    </div>
+  </div>
+</div>

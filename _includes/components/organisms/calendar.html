@@ -1,0 +1,150 @@
+<!-- <div class=" d-flex align-items-start align-items-center justify-content-between" style="padding: 0.75rem;" >
+	<p class="text-lg mb-0"><b>September</b> <small>2018</small></p>
+	<div>
+		<a class="btn btn-link btn-sm" href=""><i class="fa fa-angle-left"></i></a>
+		<a class="btn btn-link btn-sm" href=""><i class="fa fa-angle-right"></i></a>
+	</div>
+</div> -->
+<table class="calendar">
+	<thead>
+		<tr>
+			<th>Sun</th>
+			<th>Mon</th>
+			<th>Tue</th>
+			<th>Wed</th>
+			<th>Thu</th>
+			<th>Fri</th>
+			<th>Sat</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="calendar-item">26</td>
+			<td class="calendar-item">27</td>
+			<td class="calendar-item">28</td>
+			<td class="calendar-item">29</td>
+			<td class="calendar-item">30</td>
+			<td class="calendar-item">31</td>
+			<td class="calendar-item calendar-item-current">01</td>
+		</tr>
+		<tr>
+			<td class="calendar-item calendar-item-current">02</td>
+			<td class="calendar-item calendar-item-current">03</td>
+			<td class="calendar-item calendar-item-current">04</td>
+			<td class="calendar-item calendar-item-current">05</td>
+			<td class="calendar-item calendar-item-current">06</td>
+			<td class="calendar-item calendar-item-current">07</td>
+			<td class="calendar-item calendar-item-current">08</td>
+		</tr>
+		<tr>
+			<td class="calendar-item calendar-item-current">09</td>
+			<td class="calendar-item calendar-item-current">10</td>
+			<td class="calendar-item calendar-item-current">11</td>
+			<td class="calendar-item calendar-item-current">12</td>
+			<td class="calendar-item calendar-item-current">13</td>
+			<td class="calendar-item calendar-item-current">14</td>
+			<td class="calendar-item calendar-item-current">15</td>
+		</tr>
+		<tr>
+			<td class="calendar-item calendar-item-current">16</td>
+			<td class="calendar-item calendar-item-current">17</td>
+			<td class="calendar-item calendar-item-current">18</td>
+			<td class="calendar-item calendar-item-current">19</td>
+			<td class="calendar-item calendar-item-current">20</td>
+			<td class="calendar-item calendar-item-current">21</td>
+			<td class="calendar-item calendar-item-current">22</td>
+		</tr>
+		<tr>
+			<td class="calendar-item calendar-item-current">23</td>
+			<td class="calendar-item calendar-item-current">24</td>
+			<td class="calendar-item calendar-item-current">25</td>
+			<td class="calendar-item calendar-item-current">26</td>
+			<td class="calendar-item calendar-item-current has-availability">
+				27
+				<ul class="time-stamp">
+					<li class="morning"></li>
+					<li class="afternoon"></li>
+					<li class="evening"></li>
+				</ul>
+			</td>
+			<td class="calendar-item calendar-item-current has-availability" data-toggle="collapse" data-target=".calendar-schedule">
+				28
+				<ul class="time-stamp">
+					<li class="morning"></li>
+					<li class="afternoon"></li>
+					<li class="evening"></li>
+				</ul>
+			</td>
+			<td class="calendar-item calendar-item-current has-availability">
+				29
+				<ul class="time-stamp">
+					<li class="morning"></li>
+					<li class="afternoon"></li>
+					<li class="evening"></li>
+				</ul>
+			</td>
+		</tr>
+		<tr class="calendar-schedule collapse">
+			<td class="calendar-item" colspan="7">
+				<div class="form-group row">
+					<label class="form-label col-lg-3" for="">Morning</label>
+					<div class="col-lg-6">
+						<a class="btn btn-light btn-sm" href="">09:00</a>
+						<a class="btn btn-light btn-sm" href="">10:00</a>
+						<a class="btn btn-light btn-sm" href="">11:00</a>
+						<a class="btn btn-light btn-sm" href="">12:00</a>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="form-label col-lg-3" for="">Afternoon</label>
+					<div class="col-lg-6">
+					<a class="btn btn-light btn-sm" href="">01:00</a>
+					<a class="btn btn-light btn-sm" href="">02:00</a>
+					<a class="btn btn-light btn-sm" href="">03:00</a>
+					<a class="btn btn-light btn-sm" href="">04:00</a>
+					<a class="btn btn-light btn-sm" href="">05:00</a>
+				</div>
+				</div>
+				<div class="form-group row">
+					<label class="form-label col-lg-3" for="">Evening</label>
+					<div class="col-lg-6">
+						<a class="btn btn-light btn-sm" href="">06:00</a>
+						<a class="btn btn-light btn-sm" href="">07:00</a>
+						<a class="btn btn-light btn-sm" href="">08:00</a>
+						<a class="btn btn-light btn-sm" href="">09:00</a>
+						<a class="btn btn-light btn-sm" href="">10:00</a>
+					</div>
+				</div>
+				<hr class="dashed">
+        {% include components/molecules/form-group/datalist.html 
+          form-layout="horizontal"
+          isInputLarge="form-group-lg"
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Select Staff (Optional)"
+          input-size=" col-lg-6"
+          input-name="employee-name"
+          input-value=""
+          input-placeholder="Select Staff (Optional)"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+          list-value-name=site.employees
+				%}
+			</td>
+		</tr>
+		<tr>
+			<td class="calendar-item calendar-item-current">30</td>
+			<td class="calendar-item">01</td>
+			<td class="calendar-item">02</td>
+			<td class="calendar-item">03</td>
+			<td class="calendar-item">04</td>
+			<td class="calendar-item">05</td>
+			<td class="calendar-item">06</td>
+		</tr>
+	</tbody>
+</table>

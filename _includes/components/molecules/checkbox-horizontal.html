@@ -1,0 +1,7 @@
+<div class="form-group form-check row {{include.isLarge }} {{ include.isRequired }}">
+  <div class="{{ include.input-size}} {{ include.form-label-size}}">
+    <input class="form-check-input"  type="checkbox" name="{{ include.input-name }}" id="{{ include.input-name }}">
+    <label class="form-check-label" for="{{ include.input-name }}">{{ include.input-label-text }}</label>
+    {% include components/molecules/form-group/visibility/helper.html %}
+  </div>
+</div>

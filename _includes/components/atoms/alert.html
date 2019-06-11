@@ -1,0 +1,10 @@
+{% if include.isDismissible == "alert-dismissible" %}
+  <div class="alert alert-{{ include.alert-class }} alert-dismissible" role="alert">
+    <button class="close" data-dismiss="alert" type="button">&times;</button>
+    {{ include.alert-content }}
+  </div>
+{% else %}
+  <div class="alert alert-{{ include.alert-type }}" role="alert">
+    {{ include.alert-content }}
+  </div>
+{% endif %}

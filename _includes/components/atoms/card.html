@@ -1,0 +1,41 @@
+<div class="card">
+  {% if include.hasCardHeader == "none" %}
+  {% else %}
+    <div class="card-header">
+      {% if include.hasCardHeaderTitle == "none" %}
+      {% else %}
+        <h6 class="card-header-title {{ include.card-heading-title-size }}">Featured</h6>
+      {% endif %}
+      {% if include.hasCardHeaderTabs == "none" %}
+      {% else %}
+        {% include components/molecules/nav-tabs.html
+          nav-type="nav-tabs"
+          isLarge=include.isCardHeaderTabsLarge
+          isStacked=include.isCardHeaderTabsStacked
+          isJustified=include.isJCardHeaderTabsustified
+          isCardHeaderTabs="card-header-tabs"
+          isResponsive=include.isCardHeaderTabsResponsive
+          list-value-name=include.card-header-tab-list-value-name
+          hasIcon=include.hasCardHeaderTabsIcon
+        %}
+      {% endif %}
+    </div>
+  {% endif %}
+  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  {% if include.hasCardFooter == "none" %}
+  {% else %}
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  {% endif %}
+</div>
+
+
+
+
+

@@ -1,0 +1,8 @@
+{% if include.hasFormIcon == "none" %}
+  {% include components/atoms/form/datalist.html %}
+{% else %}
+  <div class="form-icon {{ incluce.form-icon-placement }}">
+    {% include components/atoms/form/datalist.html %}
+    {% include components/atoms/form/icon.html %}
+  </div>
+{% endif %}

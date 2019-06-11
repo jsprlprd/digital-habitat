@@ -1,0 +1,156 @@
+<div class="list-group-item list-group-item-action" id="{{ include.input-name }}">
+  <div class="form-group row">
+    {% include components/atoms/form/label.html %}
+    <div class="{{ include.input-size }}">
+      {% include components/atoms/form/input.html 
+        form-layout="horizontal"
+        isInputLarge=""
+        isInputRequired=""
+        hasFormLabel=""
+        form-label-class="form-label"
+        form-label-size="col-lg-3"
+        form-label-text="Address Line 1"
+        input-size="col-lg"
+        input-type="text"
+        input-name="address-line-1"
+        input-value=""
+        input-placeholder="Address Line 1"
+        hasFormIcon="none"
+        form-icon-name=""
+        form-icon-placement=""
+        hasFormHelper="none"
+        form-helper-text=""
+      %}
+      {% include components/atoms/form/input.html 
+        form-layout="horizontal"
+        isInputLarge=""
+        isInputRequired=""
+        hasFormLabel=""
+        form-label-class="form-label"
+        form-label-size="col-lg-3"
+        form-label-text="Address Line 2"
+        input-size="col-lg"
+        input-type="text"
+        input-name="address-line-2"
+        input-value=""
+        input-placeholder="Address Line 2"
+        hasFormIcon="none"
+        form-icon-name=""
+        form-icon-placement=""
+        hasFormHelper="none"
+        form-helper-text=""
+      %}
+      {% include components/atoms/form/input.html 
+        form-layout="horizontal"
+        isInputLarge=""
+        isInputRequired=""
+        hasFormLabel=""
+        form-label-class="form-label"
+        form-label-size="col-lg-3"
+        form-label-text="Address Line 3"
+        input-size="col-lg"
+        input-type="text"
+        input-name="address-line-3"
+        input-value=""
+        input-placeholder="Address Line 3"
+        hasFormIcon="none"
+        form-icon-name=""
+        form-icon-placement=""
+        hasFormHelper="none"
+        form-helper-text=""
+      %}
+      <div class="form-row mt-2">
+        <div class="col">
+          {% include components/atoms/form/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-lg-3"
+            form-label-text="City / Town"
+            input-size="col-lg"
+            input-type="text"
+            input-name="city-town"
+            input-value=""
+            input-placeholder="City / Town"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+        </div>
+        <div class="col">
+          {% include components/atoms/form/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-lg-3"
+            form-label-text="State / Province / Region"
+            input-size="col-lg"
+            input-type="text"
+            input-name="state-province-region"
+            input-value=""
+            input-placeholder="State / Province / Region"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+        </div>
+      </div>
+      <div class="form-row mt-2">
+        <div class="col">
+          {% include components/atoms/form/datalist.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-lg-3"
+            form-label-text="Country"
+            input-size="col-lg"
+            input-name="country"
+            input-value=""
+            input-placeholder="Country"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+            list-value-name=site.data.list-value.country
+          %}
+        </div>
+        <div class="col">
+          {% include components/atoms/form/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-lg-3"
+            form-label-text="ZIP / Postal Code"
+            input-size="col-lg"
+            input-type="text"
+            input-name="zip-postal-code"
+            input-value=""
+            input-placeholder="ZIP / Postal Code"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+        </div>
+      </div>
+      {% if include.hasFormHelper == "none" %}
+      {% else %}
+        {% include components/atoms/form/helper.html %}
+      {% endif %}
+    </div>
+  </div>
+</div>

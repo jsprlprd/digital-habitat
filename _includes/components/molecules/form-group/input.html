@@ -1,0 +1,16 @@
+{% if include.form-layout == "horizontal" %}
+  <div class="form-group row">
+    {% include components/molecules/form-group/visibility/label.html %}
+    <div class="{{ include.input-size }}">
+      {% include components/molecules/form-group/visibility/icon-input.html %}
+      {% include components/molecules/form-group/visibility/helper.html %}
+    </div>
+  </div>
+  {% else %}
+  <div class="form-group">
+    {% include components/molecules/form-group/visibility/label.html %}
+    {% include components/molecules/form-group/visibility/icon-input.html %}
+    {% include components/molecules/form-group/visibility/helper.html %}
+  </div>
+{% endif %}
+

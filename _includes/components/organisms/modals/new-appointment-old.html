@@ -1,0 +1,720 @@
+<div class="modal modal-responsive" id="new-appointment">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title h4">New Appointment</h6>
+        <button class="close" data-dismiss="modal" type="button">&times;</button>
+      </div>
+      <div class="modal-nav">
+        {% include components/molecules/nav-tabs.html
+          nav-type="nav-tabs"
+          isLarge=""
+          isStacked=""
+          isJustified=""
+          isResponsive="nav-tabs-responsive"
+          list-value-name=site.data.navigation.new-appointment-modal
+          hasIcon=""
+        %}
+      </div>
+      <div class="modal-body">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="appointment-details-tab">
+            <p class="lead">Appointment Details</p>
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Service"
+              input-size="col-lg-6"
+              input-name="service"
+              input-value=""
+              input-placeholder="Select Service"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.data.list-value.service
+            %}
+
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Employee"
+              input-size="col-lg-6"
+              input-name="employee"
+              input-value=""
+              input-placeholder="Select Employee"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.data.list-value.employee-name
+            %}
+
+            <div class="form-group row">
+              <label class="form-label col-lg-3" for="">Date &amp; Time</label>
+              <div class="col-lg-6">
+                <input type="text" id="new-appointment-datetimepicker" class="form-control" />
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="customer-details-tab">
+
+            <p class="lead">Personal Details</p>
+
+            <div class="form-group row">
+              <label class="form-label col-lg-3" for="">Name</label>
+              <div class="col-lg-6">
+                <select id="new-appointment-customer" class="demo-default" placeholder="Search / Select Customer">
+                  <option value="">Add / Search Customer Name or Contact Details</option>
+                  <option value="4">Thomas Edison</option>
+                  <option value="1">Nikola</option>
+                  <option value="3">Nikola Tesla</option>
+                  <option value="5">Arnold Schwarzenegger</option>
+                </select>
+                <span class="form-text"><a href="">Add new customer</a></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="form-label col-lg-3" for="">Mobile Number</label>
+              <div class="col-lg-6">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
+                  </span>
+                  <input class="form-control" type="text" placeholder="0912 345 6789">
+                </div>
+                <span class="form-text"><a href="">Add another mobile number</a></span>
+              </div>
+            </div>
+
+            {% include components/molecules/form-group/input.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Email Address"
+              input-size="col-lg-6"
+              input-type="email"
+              input-name="email-address"
+              input-value=""
+              input-placeholder="Enter Email Address"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
+            {% include components/organisms/forms/birthday-select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-md-3"
+              form-label-text="Birthday (Optional)"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="birthday"
+              input-value=""
+              input-placeholder="Enter Email Address"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
+            {% include components/molecules/form-group/textarea.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Notes"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="notes"
+              input-value=""
+              input-placeholder="Enter Notes"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
+            <hr class="dashed">
+
+            <div class="collapse" id="custom-form">
+              <p class="lead">Custom Form Title</p>
+              <div class="form-group row">
+                <label class="form-label col-lg-3" for="">Sample Input Field</label>
+                <div class="col-lg-6">
+                  <input class="form-control" type="text" placeholder="Sample Input Field">
+                </div>
+              </div>
+              <hr class="dashed">
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-push-3">
+                <div class="form-inline">
+                  <select class="form-control">
+                    <option value="">Select a Custom Form</option>
+                  </select>
+                  <a class="btn btn-primary" href="#custom-form" data-toggle="collapse">Add</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="invoice-tab">
+            <p class="lead">Invoice</p>
+            <table class="table table-lg mb-0">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Tax</th>
+                  <th>Subtotal</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    {% include components/atoms/form/select.html 
+                      form-layout=""
+                      isInputLarge=""
+                      isInputRequired=""
+                      hasFormLabel=""
+                      form-label-class=""
+                      form-label-size=""
+                      form-label-text=""
+                      input-size=""
+                      input-name="service"
+                      input-value=""
+                      input-placeholder="Select Service"
+                      hasFormIcon="none"
+                      form-icon-name=""
+                      form-icon-placement=""
+                      hasFormHelper="none"
+                      form-helper-text=""
+                      list-value-name=site.data.list-value.service
+                    %}
+                  </td>
+                  <td><p class="form-control-plaintext">₱ 200.00</p></td>
+                  <td>
+                    <div class="form-inline">
+                      <button class="btn btn-link" type="button" onclick="increment(-1, 'counter')">
+                        <i class="fas fa-minus-circle"></i>
+                      </button>
+                      <input class="form-control" disabled id='counter' type="number" min="0" value='1'>
+                      <button class="btn btn-link" type="button" onclick="increment(1, 'counter')">
+                        <i class="fas fa-plus-circle"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    {% include components/atoms/form/select.html 
+                      form-layout=""
+                      isInputLarge=""
+                      isInputRequired=""
+                      hasFormLabel=""
+                      form-label-class=""
+                      form-label-size=""
+                      form-label-text=""
+                      input-size=""
+                      input-name="tax-type"
+                      input-value=""
+                      input-placeholder="Select Tax Type"
+                      hasFormIcon="none"
+                      form-icon-name=""
+                      form-icon-placement=""
+                      hasFormHelper="none"
+                      form-helper-text=""
+                      list-value-name=site.data.list-value.tax-type
+                    %}
+                  </td>
+                  <td><p class="form-control-plaintext">₱ 200.00</p></td>
+                  <td><a class="btn btn-danger" href="">&times;</a></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="6">     
+                    <a class="btn btn-light" href="">Add New Item</a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="row">
+              <div class="col-md-5 order-md-2">
+                <div class="well">
+                  <p class="lead">Summary</p>
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Subtotal</td>
+                        <td class="text-right">₱ 200.00</td>
+                      </tr>
+                      <tr>
+                        <td>Tax</td>
+                        <td class="text-right">₱ 0.00</td>
+                      </tr>
+                      <tr>
+                        <td>Total</td>
+                        <td class="text-right">₱ 200.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-7 order-md-1">
+                <p class="lead">Payment Method</p>
+    
+                {% include components/atoms/form/select.html 
+                  form-layout=""
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size=""
+                  input-name="payment-method"
+                  input-value=""
+                  input-placeholder="Select Payment Method"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.payment-method
+                %}
+                <hr class="dashed">
+                <a class="btn btn-light" href=""><i class="fas fa-file-download"></i> Download PDF</a>
+                <a class="btn btn-light" href=""><i class="fas fa-print"></i> Print Invoice</a>
+              </div>
+            </div>  
+    
+          </div>
+          <div class="tab-pane fade" id="messages-tab">
+            <p class="lead">Messages</p>
+
+
+            <div class="accordion" id="messages">
+              <div class="card">
+                <div class="card-header">
+                  <div class="media">
+                    <div class="d-inline-flex mr-3">
+                      <label class="form-control-switch">
+                        <input type="checkbox" checked="">
+                        <span class="form-control-switch-indicator"></span>
+                      </label>
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6 class="mb-0">
+                        <a href="" data-toggle="collapse" data-target="#confirmation-message-panel" aria-expanded="true" aria-controls="collapseOne">
+                          Confirmation Message (Instant)
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="align-self-center d-inline-flex ml-3">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse show" data-parent="#messages" id="confirmation-message-panel">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-class=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+            
+                      </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li class="list-inline-item" title="The customer's full name" data-value="#FULLNAME">
+                            <a class="badge badge-primary" href="">#FULLNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="badge badge-primary" href="">#FIRSTNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="badge badge-primary" href="">#APPTYPE</a>
+                          </li>
+                          <li class="list-inline-item" title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="badge badge-primary" href="">#BKLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="badge badge-primary" href="">#BRANCH</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="badge badge-primary" href="">#DATE</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="badge badge-primary" href="">#TIME</a>
+                          </li>
+                          <li class="list-inline-item" title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="badge badge-primary" href="">#INVLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="Employee first name" data-value="#EMPFN">
+                            <a class="badge badge-primary" href="">#EMPFN</a>
+                          </li>
+                          <li class="list-inline-item" title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="badge badge-primary" href="">#BRNCHNO</a>
+                          </li>
+                          <li class="list-inline-item" title="Confirmation link" data-value="#CONFLNK">
+                            <a class="badge badge-primary" href="">#CONFLNK</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <div class="media">
+                    <div class="d-inline-flex mr-3">
+                      <label class="form-control-switch">
+                        <input type="checkbox" checked="">
+                        <span class="form-control-switch-indicator"></span>
+                      </label>
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6 class="mb-0">
+                        <a href="" data-toggle="collapse" data-target="#reminder-message-panel" aria-expanded="true" aria-controls="collapseOne">
+                          Reminder Message (24-Hours Before)
+                        </a>
+                      </h6>
+                    </div>
+                    <div class="align-self-center d-inline-flex ml-3">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" data-parent="#messages" id="reminder-message-panel">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-class=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+
+                      </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li class="list-inline-item" title="The customer's full name" data-value="#FULLNAME">
+                            <a class="badge badge-primary" href="">#FULLNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="badge badge-primary" href="">#FIRSTNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="badge badge-primary" href="">#APPTYPE</a>
+                          </li>
+                          <li class="list-inline-item" title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="badge badge-primary" href="">#BKLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="badge badge-primary" href="">#BRANCH</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="badge badge-primary" href="">#DATE</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="badge badge-primary" href="">#TIME</a>
+                          </li>
+                          <li class="list-inline-item" title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="badge badge-primary" href="">#INVLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="Employee first name" data-value="#EMPFN">
+                            <a class="badge badge-primary" href="">#EMPFN</a>
+                          </li>
+                          <li class="list-inline-item" title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="badge badge-primary" href="">#BRNCHNO</a>
+                          </li>
+                          <li class="list-inline-item" title="Confirmation link" data-value="#CONFLNK">
+                            <a class="badge badge-primary" href="">#CONFLNK</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <div class="media">
+                    <div class="d-inline-flex mr-3">
+                      <label class="form-control-switch">
+                        <input type="checkbox" checked="">
+                        <span class="form-control-switch-indicator"></span>
+                      </label>
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6 class="mb-0">
+                        <a href="" data-toggle="collapse" data-target="#after-appointment-message-panel" aria-expanded="true" aria-controls="collapseOne">
+                          After Appointment
+                        </a>
+                      </h5>
+                    </div>
+                    <div class="align-self-center d-inline-flex ml-3">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" data-parent="#messages" id="after-appointment-message-panel">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <fieldset class="form-group">
+                          <label class="form-label" for="">In how long should we sent the reminder?</label>
+                          <div class="input-group">
+                            <input class="form-control" type="number">
+                            <span class="input-group-btn dropdown">
+                              <a class="btn btn-light" data-toggle="dropdown" href="#">Minutes</a>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="">Minutes</a></li>
+                                <li><a href="">Hours</a></li>
+                                <li><a href="">Days</a></li>
+                              </ul>
+                            </span>
+                          </div>
+                        </fieldset>
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-class=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+
+                      </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li class="list-inline-item" title="The customer's full name" data-value="#FULLNAME">
+                            <a class="badge badge-primary" href="">#FULLNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="badge badge-primary" href="">#FIRSTNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="badge badge-primary" href="">#APPTYPE</a>
+                          </li>
+                          <li class="list-inline-item" title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="badge badge-primary" href="">#BKLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="badge badge-primary" href="">#BRANCH</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="badge badge-primary" href="">#DATE</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="badge badge-primary" href="">#TIME</a>
+                          </li>
+                          <li class="list-inline-item" title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="badge badge-primary" href="">#INVLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="Employee first name" data-value="#EMPFN">
+                            <a class="badge badge-primary" href="">#EMPFN</a>
+                          </li>
+                          <li class="list-inline-item" title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="badge badge-primary" href="">#BRNCHNO</a>
+                          </li>
+                          <li class="list-inline-item" title="Confirmation link" data-value="#CONFLNK">
+                            <a class="badge badge-primary" href="">#CONFLNK</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <div class="media">
+                    <div class="d-inline-flex mr-3">
+                      <label class="form-control-switch">
+                        <input type="checkbox" checked="">
+                        <span class="form-control-switch-indicator"></span>
+                      </label>
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6 class="mb-0">
+                        <a href="" data-toggle="collapse" data-target="#long-term-followup-message-panel" aria-expanded="true" aria-controls="collapseOne">
+                          Long-Term Follow-Up
+                        </a>
+                      </h5>
+                    </div>
+                    <div class="align-self-center d-inline-flex ml-3">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" data-parent="#messages" id="long-term-followup-message-panel">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <fieldset class="form-group">
+                          <label class="form-label" for="">In how long should we sent the reminder?</label>
+                          <div class="input-group">
+                            <input class="form-control" type="number">
+                            <span class="input-group-btn dropdown">
+                              <a class="btn btn-light" data-toggle="dropdown" href="#">Minutes</a>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="">Minutes</a></li>
+                                <li><a href="">Hours</a></li>
+                                <li><a href="">Days</a></li>
+                              </ul>
+                            </span>
+                          </div>
+                        </fieldset>
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-class=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+
+                      </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li class="list-inline-item" title="The customer's full name" data-value="#FULLNAME">
+                            <a class="badge badge-primary" href="">#FULLNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="badge badge-primary" href="">#FIRSTNAME</a>
+                          </li>
+                          <li class="list-inline-item" title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="badge badge-primary" href="">#APPTYPE</a>
+                          </li>
+                          <li class="list-inline-item" title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="badge badge-primary" href="">#BKLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="badge badge-primary" href="">#BRANCH</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="badge badge-primary" href="">#DATE</a>
+                          </li>
+                          <li class="list-inline-item" title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="badge badge-primary" href="">#TIME</a>
+                          </li>
+                          <li class="list-inline-item" title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="badge badge-primary" href="">#INVLNK</a>
+                          </li>
+                          <li class="list-inline-item" title="Employee first name" data-value="#EMPFN">
+                            <a class="badge badge-primary" href="">#EMPFN</a>
+                          </li>
+                          <li class="list-inline-item" title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="badge badge-primary" href="">#BRNCHNO</a>
+                          </li>
+                          <li class="list-inline-item" title="Confirmation link" data-value="#CONFLNK">
+                            <a class="badge badge-primary" href="">#CONFLNK</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light btn-wide" data-dismiss="modal" type="button">Cancel</button>
+        <button class="btn btn-primary btn-wide" type="button">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+</div>

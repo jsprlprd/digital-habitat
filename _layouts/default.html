@@ -1,0 +1,50 @@
+---
+layout: base
+---
+
+<header class="heading fixed-top">
+
+  <div class="heading-menu d-flex align-items-start align-items-center justify-content-between">
+    <div class="heading-menu-left">
+      {% if page.hasBackButton %}
+        <button class="heading-menu-btn" onclick="window.history.go(-1); return false;" type="button"><i class="material-icons">arrow_back</i></button>
+      {% endif %}
+    </div>
+    {% if page.hasHeadingTitleSmall == "always-visible" %}
+      <span class="heading-menu-title d-block">{{ page.heading-title }}</span>
+      {% else %}
+      <span class="heading-menu-title">{{ page.heading-title }}</span>
+    {% endif %}
+
+
+    <div class="heading-menu-right">
+      {% if page.hasSearchButton %}
+        <a class="heading-menu-btn" href="{{ site.baseurl }}/search.html"><i class="material-icons">search</i></a>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if page.hasHeadingTitle %}
+    <h1 class="heading-title h3">{{ page.heading-title }}</h1>
+  {% endif %}
+  {% if page.hasSearchBar %}
+    <div class="heading-search shadow-sm">
+      <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
+    </div>
+  {% endif %}
+</header>
+
+<main class="container" id="main-panel">
+  {{ content }}
+</main>
+
+<footer class="fixed-bottom">
+  {% include components/molecules/nav-menu.html
+    nav-type="nav-tabs"
+    isLarge=""
+    isStacked=""
+    isJustified="nav-fill"
+    list-value-name=site.data.navigation.global
+    hasIcon="false"
+  %}
+</footer>

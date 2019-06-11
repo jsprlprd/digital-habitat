@@ -1,0 +1,15 @@
+
+
+
+
+{% if include.button-type == "link" %}
+  <a class="btn btn-{{ include.button-class }}" href="#" role="button">{{ include.button-label }}</a>
+{% elsif include.button-type == "button" %}
+  <button class="btn btn-{{ include.button-class }}" type="submit">{{ include.button-label }}</button>
+{% elsif include.button-type == "input-button" %}
+  <input class="btn btn-{{ include.button-class }}" type="button" value="{{ include.button-label }}">
+{% elsif include.button-type == "input-submit" %}
+  <input class="btn btn-{{ include.button-class }}" type="submit" value="{{ include.button-label }}">
+{% elsif include.button-type == "input-reset" %}
+  <input class="btn btn-{{ include.button-class }}" type="reset" value="{{ include.button-label }}">
+{% endif %}

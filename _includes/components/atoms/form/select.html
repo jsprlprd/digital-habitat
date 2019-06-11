@@ -1,0 +1,6 @@
+<select class="form-control {{include.isInputLarge }} {{ include.isInputRequired }}" id="{{ include.input-name }}" name="{{ include.input-name }}">
+  <option value="" selected="" disabled="">{{ include.input-placeholder }}</option>
+  {% for list in include.list-value-name %}
+    <option value="{{ list.value }}{{ list.name }}">{{ list.text }}{{ list.name }}</option>
+  {% endfor %}
+</select>

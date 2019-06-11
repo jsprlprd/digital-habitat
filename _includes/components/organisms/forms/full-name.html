@@ -1,0 +1,69 @@
+{% if include.form-layout == "horizontal" %}
+  <div class="form-group row">
+    {% include components/molecules/form-group/visibility/label.html %}
+    <div class="{{ include.input-size }}">
+      <div class="form-row">
+        <div class="col">
+          {% include components/molecules/form-group/visibility/icon-input.html 
+            input-type="text"
+            input-name="first-name"
+            input-placeholder="First Name"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+          %}
+        </div>
+        <div class="col">
+          {% include components/molecules/form-group/visibility/icon-input.html 
+            input-type="text"
+            input-name="last-name"
+            input-placeholder="Last Name"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+          %}
+        </div>
+      </div>
+      {% include components/molecules/form-group/visibility/helper.html %}
+    </div>
+  </div>
+  {% else %}
+  <div class="form-group form-name-group">
+    {% include components/molecules/form-group/visibility/label.html %}
+    <div class="form-row">
+      <div class="col">
+        {% include components/molecules/form-group/visibility/icon-input.html 
+          input-type="text"
+          input-name="first-name"
+          input-placeholder="First Name"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+        %}
+      </div>
+      <div class="col">
+        {% include components/molecules/form-group/visibility/icon-input.html 
+          input-type="text"
+          input-name="last-name"
+          input-placeholder="Last Name"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+        %}
+      </div>
+    </div>
+    {% include components/molecules/form-group/visibility/helper.html %}
+  </div>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+

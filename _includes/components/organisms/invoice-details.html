@@ -1,0 +1,178 @@
+<div class="card card-bordered card-rounded mb-4">
+  <div class="table-responsive">
+    <table class="card-table table table-lg">
+      <thead>
+        <tr>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Item</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Price</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Qty</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Tax</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Subtotal</a></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {% include components/atoms/form/datalist.html 
+              form-layout=""
+              isInputLarge="form-control-sm"
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text=""
+              input-size=""
+              input-name="service"
+              input-value=""
+              input-placeholder="Select Service"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.services
+            %}
+          </td>
+          <td>
+            {% include components/atoms/form/input.html 
+              form-layout=""
+              isInputLarge="form-control-sm"
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text=""
+              input-size=""
+              input-type="price"
+              input-name="text"
+              input-value="₱ 200"
+              input-placeholder=""
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+          </td>
+          <td>
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <button class="btn btn-link" type="button" onclick="increment(-1, 'counter')">
+                  <i class="fas fa-minus-circle"></i>
+                </button>
+              </div>
+              <input class="form-control" disabled id='counter' type="text" min="0" value='1' width="40">
+              <div class="input-group-append">
+                <button class="btn btn-link" type="button" onclick="increment(1, 'counter')">
+                  <i class="fas fa-plus-circle"></i>
+                </button>
+              </div>
+            </div>
+          </td>
+          <td>
+            {% include components/atoms/form/select.html 
+              form-layout=""
+              isInputLarge="form-control-sm"
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text=""
+              input-size=""
+              input-name="tax-type"
+              input-value=""
+              input-placeholder="Select Tax Type"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.data.list-value.tax-type
+            %}
+          </td>
+          <td>
+            {% include components/atoms/form/plaintext.html 
+              form-layout=""
+              isInputLarge="form-control-sm"
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text=""
+              input-size=""
+              input-type=""
+              input-name=""
+              input-value="₱ 200"
+              input-placeholder=""
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+          </td>
+          <td><a class="btn btn-danger btn-sm" href="">&times;</a></td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <a class="btn btn-link text-dark" href=""><i class="fas fa-plus-circle mr-1"></i>Add another item</a>
+            <!-- <a class="btn btn-light" href="">Add New Item</a> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-5 order-md-2">
+        <div class="well">
+          <p class="lead">Summary</p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Subtotal</td>
+                <td class="text-right">₱ 200.00</td>
+              </tr>
+              <tr>
+                <td>Tax</td>
+                <td class="text-right">₱ 0.00</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td class="text-right">₱ 200.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-7 order-md-1">
+        <p class="lead">Payment Method</p>
+        {% include components/atoms/form/select.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class=""
+          form-label-size=""
+          form-label-text=""
+          input-size=""
+          input-name="payment-method"
+          input-value=""
+          input-placeholder="Select Payment Method"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+          list-value-name=site.data.list-value.payment-method
+        %}
+        <hr class="dashed">
+        <a class="btn btn-light" href=""><i class="fas fa-file-download"></i> Download PDF</a>
+        <a class="btn btn-light" href=""><i class="fas fa-print"></i> Print Invoice</a>
+      </div>
+    </div>  
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="modal modal-responsive" id="add-new-branch">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title h4">Add New Branch</h6>
+        <button class="close" data-dismiss="modal"  type="button">&times;</button>
+      </div>
+      <div class="modal-nav">
+        {% include components/molecules/nav-tabs.html
+          nav-type="nav-tabs"
+          isLarge=""
+          isStacked=""
+          isJustified=""
+          isResponsive="nav-tabs-responsive"
+          list-value-name=site.data.navigation.branch-settings
+          hasIcon=""
+        %}
+      </div>
+      <div class="modal-body">
+        {% include components/organisms/add-new-branch.html %}
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-link" href="">Discard</a>
+        <a class="btn btn-primary" href="">Save Changes</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ modal-id }}">Launch demo modal</button>
+
+
+<div class="modal modal-responsive" id="{{ modal-id }}">
+  <div class="modal-dialog {{ modal-lg | modal-sm }}">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title h4">{{ Modal Title }}</h6>
+        <button class="close" data-dismiss="modal"  type="button">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        {{ Insert Content Here}}
+
+      </div>
+      <div class="modal-footer">
+
+        {{ Inset Action Button }}
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="list-group-item list-group-item-action" id="{{ include.input-name }}">
+  <div class="form-group row">
+    {% include components/atoms/form/label.html %}
+    <div class="{{ include.input-size }}">
+      {% include components/atoms/form/textarea.html %}
+      {% if include.hasFormHelper == "none" %}
+      {% else %}
+        {% include components/atoms/form/helper.html %}
+      {% endif %}
+    </div>
+  </div>
+</div>

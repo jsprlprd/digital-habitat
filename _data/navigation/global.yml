@@ -1,0 +1,19 @@
+- text: Habitat
+  icon: material-icons
+  icon-text: home
+  url: my-habitat/
+
+- text: Pinboard
+  icon: material-icons
+  icon-text: dashboard
+  url: pinboard.html
+
+- text: Network
+  icon: material-icons
+  icon-text: people
+  url: network.html
+
+- text: Profile
+  icon: material-icons
+  icon-text: account_circle
+  url: profile.html

@@ -1,0 +1,110 @@
+<div class="login-form">
+  <div class="heading">
+    <h1 class="heading-title h3">Get started absolutely free.</h1>
+    <p class="heading-subtitle">Free forever. No credit card needed.</p>
+  </div>
+  {% include components/molecules/form-group/input.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel=""
+    form-label-size=""
+    form-label-text="Business Name"
+    input-size=""
+    input-type="text"
+    input-name="business-name"
+    input-value=""
+    input-placeholder="Business Name Inc."
+    hasFormIcon="none"
+    form-icon-name=""
+    form-icon-placement=""
+    hasFormHelper="none"
+    form-helper-text=""
+  %}
+  {% include components/organisms/forms/full-name.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel=""
+    form-label-size=""
+    form-label-text="Full Name"
+    hasFormHelper="none"
+    form-helper-text=""
+  %}
+  {% include components/molecules/form-group/input.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel=""
+    form-label-size=""
+    form-label-text="Username"
+    input-size=""
+    input-type="text"
+    input-name="username"
+    input-value=""
+    input-placeholder="your username"
+    hasFormIcon="none"
+    form-icon-name=""
+    form-icon-placement=""
+    hasFormHelper="none"
+    form-helper-text=""
+  %}
+  {% include components/molecules/form-group/input.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel=""
+    form-label-size=""
+    form-label-text="Email"
+    input-size=""
+    input-type="email"
+    input-name="email"
+    input-value=""
+    input-placeholder="name@company.com"
+    hasFormIcon="none"
+    form-icon-name=""
+    form-icon-placement=""
+    hasFormHelper="none"
+    form-helper-text=""
+  %}
+  {% include components/molecules/form-group/input.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel=""
+    form-label-size=""
+    form-label-text="Phone"
+    input-size=""
+    input-type="tel"
+    input-name="phone"
+    input-value=""
+    input-placeholder="0912 345 6789"
+    hasFormIcon="none"
+    form-icon-name=""
+    form-icon-placement=""
+    hasFormHelper="none"
+    form-helper-text=""
+  %}
+  {% include components/molecules/form-group/input.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel=""
+    form-label-size=""
+    form-label-text="Choose a Password"
+    input-size=""
+    input-type="password"
+    input-name="password"
+    input-value=""
+    input-placeholder="Choose a Password"
+    hasFormIcon="none"
+    form-icon-name=""
+    form-icon-placement=""
+    hasFormHelper="none"
+    form-helper-text=""
+  %}
+  <div class="button-group text-center">
+    <a class="btn btn-warning btn-lg btn-wide btn-pills" href="{{ site.baseurl }}/app/dashboard/">Continue</a>
+    <!-- <div class="text-sm text-muted mt-3">By clicking "Continue" I agree to Phollowup's <br><a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.</div> -->
+  </div>
+</div>
