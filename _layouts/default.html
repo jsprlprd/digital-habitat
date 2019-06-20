@@ -3,7 +3,6 @@ layout: base
 ---
 
 <header class="heading fixed-top">
-
   <div class="heading-menu d-flex align-items-start align-items-center justify-content-between">
     <div class="heading-menu-left">
       {% if page.hasBackButton %}
@@ -15,15 +14,12 @@ layout: base
       {% else %}
       <span class="heading-menu-title">{{ page.heading-title }}</span>
     {% endif %}
-
-
     <div class="heading-menu-right">
       {% if page.hasSearchButton %}
         <a class="heading-menu-btn" href="{{ site.baseurl }}/search.html"><i class="material-icons">search</i></a>
       {% endif %}
     </div>
   </div>
-
   {% if page.hasHeadingTitle %}
     <h1 class="heading-title h3">{{ page.heading-title }}</h1>
   {% endif %}

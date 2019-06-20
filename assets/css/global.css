@@ -148,7 +148,7 @@ body {
 
 
 footer {
-  background-color: #D9D9D9;
+  background-color: #ffffff;
 }
 
 footer .nav-tabs {
@@ -164,9 +164,10 @@ footer .nav-tabs .nav-link {
 }
 
 footer .nav-link {
-  padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 0.5rem);
   color: #666;
   position: relative;
+  line-height: 1;
 }
 
 footer .nav-link-icon {
@@ -259,7 +260,7 @@ footer .nav-link.active::before {
 
 
 .card-scrollable .card-text {
-  color: #666666;
+  /* color: #666666; */
 }
 
 
