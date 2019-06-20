@@ -1,0 +1,25 @@
+---
+label: test 2
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: boolean
+  name: hasBackButton
+  label: hasBackButton
+- type: boolean
+  name: hasSearchButton
+  label: hasSearchButton
+- type: text
+  name: hasHeadingTitleSmall
+  label: hasHeadingTitleSmall
+- type: boolean
+  name: hasHeadingTitle
+  label: hasHeadingTitle
+- type: boolean
+  name: hasSearchBar
+  label: hasSearchBar
+- type: text
+  name: heading-title
+  label: heading-title
