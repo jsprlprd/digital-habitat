@@ -2,6 +2,11 @@
 label: Blog
 hide_body: true
 fields:
+- name: image_url
+  type: text
+  config:
+    required: false
+  label: Image URL
 - type: text
   name: title
   label: Title
@@ -17,9 +22,6 @@ fields:
 - type: textarea
   name: summary
   label: Summary
-- type: file
-  name: image_url
-  label: Image URL
 - type: number
   name: order
   label: Order
