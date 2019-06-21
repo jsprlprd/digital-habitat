@@ -281,3 +281,9 @@ footer .nav-link.active::before {
   border-top: 0;
   background-color: transparent;
 }
+
+
+
+a.card {
+  color: inherit;
+}
