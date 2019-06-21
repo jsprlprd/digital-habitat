@@ -1,48 +1,30 @@
 ---
-label: blog
+label: Blog
 hide_body: false
 fields:
-- name: titke
+- name: image_url
   type: text
   config:
     required: false
+  label: Image URL
+- type: text
+  name: title
   label: Title
-- name: author
-  type: text
-  config:
-    required: false
+- name: card_body_heading_subtitle
+  type: boolean
+  label: Card Body Heading Subtitle
+- type: text
+  name: author
   label: Author
-- name: date_published
-  type: datetime
+- type: text
+  name: date_published
   label: Date Published
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-- name: summary
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
+- type: textarea
+  name: summary
   label: Summary
-- name: order
-  type: number
+- type: number
+  name: order
   label: Order
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
-- name: categories
-  type: tag_list
-  default: []
+- type: list
+  name: categories
   label: Categories
-pages:
-- _blogs/6-digital-trends-to-watch.md
