@@ -29,4 +29,5 @@ fields:
   name: categories
   label: Categories
 pages:
+- _blogs/turn-ideas-into-action.md
 - _blogs/2019-the-year-of-digital-decisions.md
