@@ -6,6 +6,7 @@ summary: Business transformation will accelerate as enterprises make critical de
   for operating more efficiently, creating new markets and customer experiences, improving
   outcomes and reinvesting savings to fund a digital future.
 order: 1
-categories: []
+categories:
+- overview
 
 ---
