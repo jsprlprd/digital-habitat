@@ -40,3 +40,5 @@ fields:
     min: 
     max: 
     step: 
+pages:
+- _blogs/6-digital-trends-to-watch.md
