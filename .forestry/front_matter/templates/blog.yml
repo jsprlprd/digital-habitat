@@ -28,3 +28,5 @@ fields:
 - type: list
   name: categories
   label: Categories
+pages:
+- _blogs/2019-the-year-of-digital-decisions.md
