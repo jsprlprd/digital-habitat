@@ -11,6 +11,5 @@ order: 2
 categories:
 - digital_transformation
 - overview
-published: false
 
 ---
