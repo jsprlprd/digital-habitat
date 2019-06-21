@@ -18,21 +18,26 @@ heading-title: Digital Transformation
 </div>
 
 <div class="row card-scrollable">
-  {% assign blogs = site.blogs | sort:"order" | where: "categories", "overview" %}
+  {% assign blogs = site.blogs | sort: "order" | where: "categories", "overview" %}
   {% for blog in blogs %}
     <div class="card">
+      {% if blog.image_url %}
+        <img class="card-img-top" src="{{ blog.image_url }}" alt="" />
+      {% endif %}
       <div class="card-body">
         <div class="card-body-heading">
           <h6 class="card-body-heading-title h5">{{ blog.title }}</h6>
-          <p class="card-body-heading-subtitle">By: {{ blog.author }} on {{ blog.date-published }}</p>
+          {% if blog.card-body-heading-subtitle %}
+            <p class="card-body-heading-subtitle">By: {{ blog.author }} on {{ blog.date_published }}</p>
+          {% endif %}
         </div>
         <p class="card-text">{{ blog.summary }}</p>
       </div>
       <div class="card-footer">
         <div class="d-flex align-items-start align-items-center justify-content-between">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-            <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
+          <ul class="list list-icon list-icon-default list-icon-left list-inline mb-0">
+            <li class="list-inline-item"><i class="list-icon-item fas fa-thumbs-up"></i> <span>123</span></li>
+            <li class="list-inline-item"><i class="list-icon-item fas fa-paperclip"></i> <span>5</span></li>
           </ul>
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
@@ -45,256 +50,3 @@ heading-title: Digital Transformation
   {% endfor %}
   <div class="spacer"></div>
 </div>
-<!-- 
-
-<div class="subheading d-flex align-items-start align-items-start justify-content-between">
-  <p class="subheading-title">Solutions</p>
-  <a class="subheading-link" href="">More</a>
-</div>
-
-<div class="row card-scrollable" id="style-1">
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">Next generation technologies</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">DXC delivers world-class solutions to improve and optimize business processes. In this infographic, learn more about our digital capabilities.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list list-icon list-icon-default list-icon-left list-inline mb-0">
-          <li class="list-inline-item"><i class="list-icon-item fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="list-icon-item fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">DXC Bionix, our data-driven approach to intelligent automation</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">DXC Bionix applies deep data analytics, lean process methodology and automation — in a holistic approach across people, process and technology — to achieve client business outcomes.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">Industry-leading DXC Partner Network</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">Our technology independence and unique approach for assessing, engaging and governing our partnerships allows us to quickly combine the best skills and technologies into complete solutions.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="spacer"></div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="subheading d-flex align-items-start align-items-start justify-content-between">
-  <p class="subheading-title">Insights</p>
-  <a class="subheading-link" href="">More</a>
-</div>
-
-<div class="row card-scrollable" id="style-1">
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">A Tale of Two Missions: From IT Modernization to Business Transformation</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">“Digital transformation” (DT) has become an almost unavoidable buzzword. But while it’s easy to dismiss catchy phrases of the day, their rise and fall usually tell us something about marketplace developments. This report provides a 10-step DT action plan.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">DXC Digital Directions papers series</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">Our paper series provides guidance for accelerating digital transformation and explores opportunities for delivering better data-driven business outcomes.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">2019: The year of digital decisions</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">A survey by the Economist Intelligence Unit says 83% of enterprises surveyed plan to increase investment in digital technologies in 2019. Learn what they plan to do with that investment by exploring the survey.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="spacer"></div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="subheading d-flex align-items-start align-items-start justify-content-between">
-  <p class="subheading-title">Case Studies</p>
-  <a class="subheading-link" href="">More</a>
-</div>
-
-<div class="row card-scrollable" id="style-1">
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">Molson Coors has transformation on tap</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">It takes only four ingredients to make beer, but it takes much more to be a beer maker. Learn how DXC is helping one of the world’s largest brewers make the transition to a digital infrastructure.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">How a championship-winning race team cut engineering cycles by 30%</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">Team Penske’s engineers face constant pressure to boost the performance of their when split seconds spell the difference between winning and losing.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <div class="d-flex align-items-start align-items-start justify-content-between">
-        <h6 class="card-title h5">Scandinavian Airlines uses analytics insights to improve customer experience</h6>
-        <a href=""><i class="fas fa-thumbtack"></i></a>
-      </div>
-      <p class="card-text">SAS knows the value of analytics insights to their business, so when the airline set out on its digital transformation journey, they turned to DXC Technology to help scale up delivery of new analytics capabilities across the organization.</p>
-    </div>
-    <div class="card-footer">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><i class="fas fa-thumbs-up"></i> <span>123</span></li>
-          <li class="list-inline-item"><i class="fas fa-paperclip"></i> <span>5</span></li>
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a href=""><i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="spacer"></div>
-</div> -->
