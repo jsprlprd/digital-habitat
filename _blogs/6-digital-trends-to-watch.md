@@ -8,6 +8,7 @@ summary: Business transformation will accelerate as enterprises make critical de
 image_url: "//assets1.dxc.technology/digital_transformation/images/dtc-trends-bw.jpg"
 order: 1
 categories:
+- digital_transformation
 - overview
 card_body_heading_subtitle: false
 
