@@ -47,4 +47,3 @@ plugins:
 collections:
   blogs:
     output: true
-    permalink: /:path/
