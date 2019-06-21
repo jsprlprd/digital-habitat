@@ -40,5 +40,9 @@ fields:
     min: 
     max: 
     step: 
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
 pages:
 - _blogs/6-digital-trends-to-watch.md
