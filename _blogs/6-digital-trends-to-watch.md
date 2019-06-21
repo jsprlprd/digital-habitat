@@ -1,5 +1,6 @@
 ---
 title: 6 digital trends to watch
+card_body_heading_subtitle:
 author: ''
 date_published: 
 summary: Business transformation will accelerate as enterprises make critical decisions

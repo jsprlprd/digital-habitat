@@ -20,7 +20,7 @@ heading-title: Digital Transformation
 <div class="row card-scrollable">
   {% assign blogs = site.blogs | sort: "order" | where: "categories", "overview" %}
   {% for blog in blogs %}
-    <div class="card">
+    <a class="card" href="{{ blog.url }}">
       {% if blog.image_url %}
         <img class="card-img-top" src="{{ blog.image_url }}" alt="" />
       {% endif %}
@@ -46,7 +46,7 @@ heading-title: Digital Transformation
           </ul>
         </div>
       </div>
-    </div>
+    </a>
   {% endfor %}
   <div class="spacer"></div>
 </div>
