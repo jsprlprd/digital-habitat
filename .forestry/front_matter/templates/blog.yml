@@ -4,22 +4,25 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+- name: card_body_heading_subtitle
+  type: boolean
+  label: Card Body Heading Subtitle
 - type: text
   name: author
-  label: author
+  label: Author
 - type: text
   name: date_published
-  label: date_published
+  label: Date Published
 - type: textarea
   name: summary
-  label: summary
+  label: Summary
 - type: file
   name: image_url
-  label: image_url
+  label: Image URL
 - type: number
   name: order
-  label: order
+  label: Order
 - type: list
   name: categories
-  label: categories
+  label: Categories
