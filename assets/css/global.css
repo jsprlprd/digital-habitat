@@ -264,13 +264,9 @@ footer .nav-link.active::before {
 }
 
 
-#style-1 .card {
+.card-scrollable .card {
   min-width: calc(320px - 32px);
   flex-basis: calc(100vw - 48px);
-}
-
-#style-2 .card {
-  flex-basis: calc(200px - 30px);
 }
 
 .card-scrollable .card:first-child {

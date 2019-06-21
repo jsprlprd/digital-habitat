@@ -123,3 +123,109 @@ mark,
     content: "\2014\00A0"; // em dash, nbsp
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list {
+  @include list-unstyled;
+  > li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  &.list-sm {
+    > li {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  }
+
+  &.list-lg {
+    > li {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+.list-icon {
+  > li {
+    position: relative;
+
+    > .list-icon-item {
+      position: absolute;
+      width: 24px;
+      text-align: center;
+      line-height: inherit;
+    }
+  }
+
+  &.list-icon-left {
+    > li {
+      padding-left: 32px;
+      position: relative;
+      > .list-icon-item {
+        left: 0;
+      }    
+    }
+    > .list-inline-divider {
+      padding-left: 0;
+    }
+  }
+
+  &.list-icon-right {
+    > li {
+      padding-right: 32px;
+      position: relative;
+      > .list-icon-item {
+        right: 0;
+      }    
+    }  
+    > .list-inline-divider {
+      padding-right: 0;
+    }
+  }
+
+  &.list-icon-default {
+    .list-icon-item {
+      color: $gray-600;
+    }
+  }
+  &.list-icon-inverse {
+    .list-icon-item {
+      color: $gray-300;
+    }
+  }
+}
+

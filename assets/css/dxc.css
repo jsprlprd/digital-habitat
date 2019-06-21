@@ -470,6 +470,59 @@ mark,
   content: "— ";
 }
 
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+.list > li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.list.list-sm > li {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.list.list-lg > li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.list-icon > li {
+  position: relative;
+}
+.list-icon > li > .list-icon-item {
+  position: absolute;
+  width: 24px;
+  text-align: center;
+  line-height: inherit;
+}
+.list-icon.list-icon-left > li {
+  padding-left: 32px;
+  position: relative;
+}
+.list-icon.list-icon-left > li > .list-icon-item {
+  left: 0;
+}
+.list-icon.list-icon-left > .list-inline-divider {
+  padding-left: 0;
+}
+.list-icon.list-icon-right > li {
+  padding-right: 32px;
+  position: relative;
+}
+.list-icon.list-icon-right > li > .list-icon-item {
+  right: 0;
+}
+.list-icon.list-icon-right > .list-inline-divider {
+  padding-right: 0;
+}
+.list-icon.list-icon-default .list-icon-item {
+  color: #727272;
+}
+.list-icon.list-icon-inverse .list-icon-item {
+  color: #E4E4E4;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
