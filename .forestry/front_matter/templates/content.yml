@@ -5,21 +5,23 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: content
+  hidden: true
 - type: text
   name: title
   label: title
-- type: text
-  name: has_details
-  label: has_details
+- name: has_details
+  type: boolean
+  label: details
 - type: text
   name: author
   label: author
 - type: text
   name: date_published
   label: date_published
-- type: text
-  name: is_internal
-  label: is_internal
+- name: is_internal
+  type: boolean
+  label: internal
 - type: textarea
   name: summary
   label: summary
@@ -35,6 +37,7 @@ fields:
 - type: number
   name: order
   label: order
-- type: list
-  name: categories
+- name: categories
+  type: tag_list
+  default: []
   label: categories
