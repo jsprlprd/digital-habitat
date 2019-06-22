@@ -29,6 +29,7 @@ fields:
   name: categories
   label: Categories
 pages:
+- _blogs/dxc-bionix-our-approach-to-intelligent-automation-at-scale.md
 - _blogs/digital-deployed-next-generation-technologies.md
 - _blogs/turn-ideas-into-action.md
 - _blogs/2019-the-year-of-digital-decisions.md
