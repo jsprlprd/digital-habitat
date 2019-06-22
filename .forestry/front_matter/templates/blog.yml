@@ -29,6 +29,7 @@ fields:
   name: categories
   label: Categories
 pages:
+- _blogs/digital-agent-services.md
 - _blogs/agile-process-automation.md
 - _blogs/rapid-digital-delivery.md
 - _blogs/industry-leading-dxc-partner-network.md
