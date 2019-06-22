@@ -1,6 +1,7 @@
 ---
 layout: content
-categories: []
+categories:
+- digital_transformation_overview
 title: '2019: The year of digital decisions'
 has_details: false
 author: ''
