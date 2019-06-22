@@ -43,3 +43,5 @@ fields:
   type: tag_list
   default: []
   label: Categories
+pages:
+- _my-habitat/digital-transformation/overview/6-digital-trends-to-watch.md
