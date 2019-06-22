@@ -1,5 +1,5 @@
 ---
-image_url: "//assets1.dxc.technology/digital_transformation/images/Bionix-video-c.jpg"
+image_url: "//assets1.dxc.technology/digital_transformation/images/Bionix-video-bw.jpg"
 title: " Industry-leading DXC Partner Network"
 card_body_heading_subtitle: false
 author: ''
