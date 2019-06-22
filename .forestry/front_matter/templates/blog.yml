@@ -2,6 +2,13 @@
 label: Blog
 hide_body: false
 fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: blogs
 - name: image_url
   type: text
   config:
