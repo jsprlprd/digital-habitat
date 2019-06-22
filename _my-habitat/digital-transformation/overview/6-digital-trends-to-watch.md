@@ -1,7 +1,7 @@
 ---
 layout: content
 categories:
-- digital-transformation-overview
+- digital_transformation_overview
 title: 6 digital trends to watch
 has_details: false
 author: ''
