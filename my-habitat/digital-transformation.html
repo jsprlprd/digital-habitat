@@ -18,7 +18,9 @@ heading-title: Digital Transformation
   {% for blog in blogs %}
     <a class="card" href="{{ blog.url }}">
       {% if blog.image_url %}
-        <img class="card-img-top" src="{{ blog.image_url }}" alt="" />
+        <div class="card-img-wrapper">
+          <img class="card-img" src="{{ blog.image_url }}" alt="" />
+        </div>
       {% endif %}
       <div class="card-body">
         <div class="card-body-heading">
@@ -59,7 +61,9 @@ heading-title: Digital Transformation
   {% for blog in blogs %}
     <a class="card" href="{{ blog.url }}">
       {% if blog.image_url %}
-        <img class="card-img-top" src="{{ blog.image_url }}" alt="" />
+        <div class="card-img-wrapper">
+          <img class="card-img" src="{{ blog.image_url }}" alt="" />
+        </div>
       {% endif %}
       <div class="card-body">
         <div class="card-body-heading">
