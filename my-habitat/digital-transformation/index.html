@@ -117,7 +117,7 @@ heading-title: Digital Transformation
 </div>
 
 <div class="row card-scrollable">
-  {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_services_and_solutions" %}
+  {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_featured_case_studies" %}
   {% for content in contents %}
     <a class="card" href="{{ site.baseurl }}{{ content.url }}">
       {% if content.image_url %}
