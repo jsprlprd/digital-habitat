@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: contents
 categories:
 - digital_transformation_overview
 title: Turn ideas into action

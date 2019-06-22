@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: contents
 categories:
 - digital_transformation_services_and_solutions
 title: " DXC Bionix, our approach to intelligent automation at scale"
