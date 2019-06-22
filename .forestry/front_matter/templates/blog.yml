@@ -29,6 +29,7 @@ fields:
   name: categories
   label: Categories
 pages:
+- _blogs/rapid-digital-delivery.md
 - _blogs/industry-leading-dxc-partner-network.md
 - _blogs/digital-applications-devsecops.md
 - _blogs/dxc-bionix-our-approach-to-intelligent-automation-at-scale.md
