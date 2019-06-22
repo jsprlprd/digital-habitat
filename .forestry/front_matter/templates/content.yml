@@ -10,6 +10,14 @@ fields:
 - type: text
   name: title
   label: Title
+- type: textarea
+  name: summary
+  label: Summary
+- name: image_url
+  type: text
+  config:
+    required: false
+  label: Image URL
 - name: has_details
   type: boolean
   label: Has Details
@@ -22,14 +30,6 @@ fields:
 - name: is_internal
   type: boolean
   label: Internal
-- type: textarea
-  name: summary
-  label: Summary
-- name: image_url
-  type: text
-  config:
-    required: false
-  label: Image URL
 - type: number
   name: number_likes
   label: Number of Likes
