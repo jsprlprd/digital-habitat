@@ -1,4 +1,5 @@
 ---
+layout: contents
 image_url: "//assets1.dxc.technology/services/images/02_04_DigitalAgent_bw.png"
 title: " Digital Agent Services"
 card_body_heading_subtitle: false

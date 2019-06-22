@@ -1,4 +1,5 @@
 ---
+layout: contents
 image_url: "//assets1.dxc.technology/digital_transformation/images/dtc-rapid-bw.jpg"
 title: " Rapid Digital Delivery"
 card_body_heading_subtitle: false

@@ -1,4 +1,5 @@
 ---
+layout: contents
 image_url: "//assets1.dxc.technology/bionix/images/Bionix_Watersplash_83036185c.jpg"
 title: " DXC Bionix, our approach to intelligent automation at scale"
 card_body_heading_subtitle: false

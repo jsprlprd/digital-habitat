@@ -1,5 +1,5 @@
 ---
-layout: blogs
+layout: contents
 image_url: "//assets1.dxc.technology/digital_transformation/images/dtc-bw.jpg"
 title: Turn ideas into action
 card_body_heading_subtitle: false

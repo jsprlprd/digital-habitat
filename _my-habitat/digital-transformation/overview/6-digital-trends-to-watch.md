@@ -1,16 +1,17 @@
 ---
 layout: contents
-image_url: "//assets1.dxc.technology/digital_transformation/images/dtc-trends-bw.jpg"
 title: 6 digital trends to watch
-card_body_heading_subtitle:
-author: ''
+has_details:
+author: 
 date_published: 
+is_internal:
 summary: Business transformation will accelerate as enterprises make critical decisions
   for operating more efficiently, creating new markets and customer experiences, improving
   outcomes and reinvesting savings to fund a digital future.
+image_url: "//assets1.dxc.technology/digital_transformation/images/dtc-trends-bw.jpg"
+number_likes: 123
+number_documents: 5
 order: 1
 categories:
-- overview
-- digital_transformation
-
+- digital_transformation_overview
 ---

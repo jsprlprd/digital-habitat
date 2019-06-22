@@ -1,5 +1,5 @@
 ---
-layout: blogs
+layout: contents
 image_url: "//assets1.dxc.technology/digital_transformation/images/analytics_glasses-144560401-bw.jpg"
 title: " Digital deployed: Next-generation technologies"
 card_body_heading_subtitle: false

@@ -1,4 +1,5 @@
 ---
+layout: contents
 image_url: https://assets1.dxc.technology/business_process_services/images/05-04_bw.jpg
 title: " Agile Process Automation"
 card_body_heading_subtitle: false

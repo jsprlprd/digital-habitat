@@ -48,3 +48,6 @@ collections:
   blogs:
     output: true
     permalink: /blogs/:path/
+  my-habitat:
+    output: true
+    permalink: /my-habitat/:path/

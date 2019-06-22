@@ -1,4 +1,5 @@
 ---
+layout: contents
 image_url: "//assets1.dxc.technology/application_services/images/04-05_668x376_bw.jpg"
 title: Digital Applications DevSecOps
 card_body_heading_subtitle: false

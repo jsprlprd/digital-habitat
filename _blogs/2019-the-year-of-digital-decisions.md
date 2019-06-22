@@ -1,5 +1,5 @@
 ---
-layout: blogs
+layout: contents
 image_url: "//assets1.dxc.technology/digital_transformation/images/eiusurvey-bw.jpg"
 title: '2019: The year of digital decisions'
 card_body_heading_subtitle: false
