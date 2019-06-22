@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _my-habitat
+  label: Content
+  create: all
+  match: "**/*"
+- type: directory
   path: _blogs
   label: Blogs
   create: all
@@ -13,9 +18,6 @@ sections:
   - blog
 - type: jekyll-pages
   label: Pages
-  create: all
-- type: jekyll-posts
-  label: Posts
   create: all
 upload_dir: uploads
 public_path: "/uploads"
