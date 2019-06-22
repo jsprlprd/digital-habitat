@@ -5,7 +5,7 @@ fields:
 - type: text
   name: layout
   label: Layout
-  default: content
+  default: contents
   hidden: true
 - type: text
   name: title
