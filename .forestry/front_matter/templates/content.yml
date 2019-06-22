@@ -4,40 +4,40 @@ hide_body: false
 fields:
 - type: text
   name: layout
-  label: layout
+  label: Layout
   default: content
   hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
 - name: has_details
   type: boolean
-  label: details
+  label: Has Details
 - type: text
   name: author
-  label: author
+  label: Author
 - type: text
   name: date_published
-  label: date_published
+  label: Date Published
 - name: is_internal
   type: boolean
-  label: internal
+  label: Internal
 - type: textarea
   name: summary
-  label: summary
+  label: Summary
 - type: file
   name: image_url
-  label: image_url
+  label: Image URL
 - type: number
   name: number_likes
-  label: number_likes
+  label: Number of Likes
 - type: number
   name: number_documents
-  label: number_documents
+  label: Number of Documents
 - type: number
   name: order
-  label: order
+  label: Order
 - name: categories
   type: tag_list
   default: []
-  label: categories
+  label: Categories
