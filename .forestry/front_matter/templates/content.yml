@@ -44,6 +44,7 @@ fields:
   default: []
   label: Categories
 pages:
+- _my-habitat/digital-transformation/services-and-solutions/digital-applications-devsecops.md
 - _my-habitat/digital-transformation/services-and-solutions/dxc-bionix-our-approach-to-intelligent-automation-at-scale.md
 - _my-habitat/digital-transformation/services-and-solutions/digital-deployed-next-generation-technologies.md
 - _my-habitat/digital-transformation/overview/turn-ideas-into-action.md
