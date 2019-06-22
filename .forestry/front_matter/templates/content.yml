@@ -44,6 +44,7 @@ fields:
   default: []
   label: Categories
 pages:
+- _my-habitat/digital-transformation/services-and-solutions/agile-process-automation.md
 - _my-habitat/digital-transformation/services-and-solutions/rapid-digital-delivery.md
 - _my-habitat/digital-transformation/services-and-solutions/industry-leading-dxc-partner-network.md
 - _my-habitat/digital-transformation/services-and-solutions/digital-applications-devsecops.md
