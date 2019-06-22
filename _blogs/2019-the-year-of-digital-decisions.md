@@ -1,4 +1,5 @@
 ---
+layout: blogs
 image_url: "//assets1.dxc.technology/digital_transformation/images/eiusurvey-bw.jpg"
 title: '2019: The year of digital decisions'
 card_body_heading_subtitle: false
@@ -9,7 +10,7 @@ summary: A survey by the Economist Intelligence Unit says 83% of enterprises sur
   to do with that investment by exploring the survey.
 order: 2
 categories:
-- digital_transformation
 - overview
+- digital_transformation
 
 ---
