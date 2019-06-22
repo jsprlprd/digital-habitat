@@ -7,7 +7,9 @@ date_published: ''
 summary: DXC Bionix™ applies deep data analytics, lean process methodology and automation
   — in a holistic approach across people, process and technology — to achieve client
   business outcomes.
-order: 
-categories: []
+order: 2
+categories:
+- services-and-solutions
+- digital_transformation
 
 ---
