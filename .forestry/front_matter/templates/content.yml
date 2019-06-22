@@ -1,0 +1,40 @@
+---
+label: Content
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: has_details
+  label: has_details
+- type: text
+  name: author
+  label: author
+- type: text
+  name: date_published
+  label: date_published
+- type: text
+  name: is_internal
+  label: is_internal
+- type: textarea
+  name: summary
+  label: summary
+- type: file
+  name: image_url
+  label: image_url
+- type: number
+  name: number_likes
+  label: number_likes
+- type: number
+  name: number_documents
+  label: number_documents
+- type: number
+  name: order
+  label: order
+- type: list
+  name: categories
+  label: categories
