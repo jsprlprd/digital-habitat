@@ -302,15 +302,15 @@ a.card {
 }
 
 
-.card-body-heading {
+.card-heading {
   margin-bottom: 24px;
 }
 
-.card-body-heading-title {
+.card-heading-title {
   margin-bottom: 0;
 }
 
-.card-body-heading-subtitle {
+.card-heading-subtitle {
   margin-bottom: 0;
   margin-top: 8px;
 }

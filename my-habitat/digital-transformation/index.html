@@ -23,10 +23,10 @@ heading-title: Digital Transformation
         </div>
       {% endif %}
       <div class="card-body">
-        <div class="card-body-heading">
-          <h6 class="card-body-heading-title h5">{{ content.title }}</h6>
+        <div class="card-heading">
+          <h6 class="card-heading-title h5">{{ content.title }}</h6>
           {% if content.has_details %}
-            <p class="card-body-heading-subtitle">By: {{ content.author }} on {{ content.date_published }}</p>
+            <p class="card-heading-subtitle">By: {{ content.author }} on {{ content.date_published }}</p>
           {% endif %}
           {% if content.is_internal %}
             <span class="badge badge-light">Internal</span>
