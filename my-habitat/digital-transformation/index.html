@@ -10,7 +10,7 @@ heading-title: Digital Transformation
 ---
 <div class="card-columns">
   {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_overview" %}
-  {% for content in contents %}
+  {% for content in contents limit: 3 %}
     <a class="card" href="{{ site.baseurl }}{{ content.url }}">
       {% if content.image_url %}
         <div class="card-img-wrapper">
