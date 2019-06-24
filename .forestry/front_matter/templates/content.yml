@@ -44,6 +44,7 @@ fields:
   default: []
   label: Categories
 pages:
+- _my-habitat/digital-transformation/reports-and-collaterals/dxc-digital-directions-position-paper-series.md
 - _my-habitat/digital-transformation/overview/the-recipe-for-digital-transformation-success.md
 - _my-habitat/digital-transformation/featured-case-studies/molson-coors-brewing-company.md
 - _my-habitat/digital-transformation/featured-case-studies/scandinavian-airlines-sas.md
