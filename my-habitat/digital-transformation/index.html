@@ -6,14 +6,9 @@ hasHeadingTitleSmall: always-visible
 hasHeadingTitle: false
 hasSearchBar: false
 heading-title: Digital Transformation
-
 ---
-<div class="subheading d-flex align-items-start align-items-start justify-content-between">
-  <p class="subheading-title">Overview</p>
-  <a class="subheading-link" href="">More</a>
-</div>
 
-<div class="row card-scrollable">
+<div class="card-columns">
   {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_overview" %}
   {% for content in contents %}
     <a class="card" href="{{ site.baseurl }}{{ content.url }}">
@@ -52,12 +47,9 @@ heading-title: Digital Transformation
   <div class="spacer"></div>
 </div>
 
+<div class="row card-section"> 
 
-
-
-
-
-
+  <div class="container">
 <div class="subheading d-flex align-items-start align-items-start justify-content-between">
   <p class="subheading-title">Services &amp; Solutions</p>
   <a class="subheading-link" href="">More</a>
@@ -102,6 +94,9 @@ heading-title: Digital Transformation
   <div class="spacer"></div>
 </div>
 
+
+  </div>
+</div>
 
 
 
