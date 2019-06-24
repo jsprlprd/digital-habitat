@@ -48,53 +48,50 @@ heading-title: Digital Transformation
 </div>
 
 <div class="row card-section"> 
-
   <div class="container">
-<div class="subheading d-flex align-items-start align-items-start justify-content-between">
-  <p class="subheading-title">Services &amp; Solutions</p>
-  <a class="subheading-link" href="">More</a>
-</div>
+    <div class="subheading d-flex align-items-start align-items-start justify-content-between">
+      <p class="subheading-title">Services &amp; Solutions</p>
+      <a class="subheading-link" href="">More</a>
+    </div>
 
-<div class="row card-scrollable">
-  {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_services_and_solutions" %}
-  {% for content in contents %}
-    <a class="card" href="{{ site.baseurl }}{{ content.url }}">
-      {% if content.image_url %}
-        <div class="card-img-wrapper">
-          <img class="card-img" src="{{ content.image_url }}" alt="" />
-        </div>
-      {% endif %}
-      <div class="card-body">
-        <div class="card-heading">
-          <h6 class="card-heading-title h5">{{ content.title }}</h6>
-          {% if content.has_details %}
-            <p class="card-heading-subtitle">By: {{ content.author }} on {{ content.date_published }}</p>
+    <div class="row card-scrollable">
+      {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_services_and_solutions" %}
+      {% for content in contents %}
+        <a class="card" href="{{ site.baseurl }}{{ content.url }}">
+          {% if content.image_url %}
+            <div class="card-img-wrapper">
+              <img class="card-img" src="{{ content.image_url }}" alt="" />
+            </div>
           {% endif %}
-          {% if content.is_internal %}
-            <span class="badge badge-light">Internal</span>
-          {% endif %}
-        </div>
-        <p class="card-text">{{ content.summary }}</p>
-      </div>
-      <div class="card-footer">
-        <div class="d-flex align-items-start align-items-center justify-content-between">
-          <ul class="list list-icon list-icon-default list-icon-left list-inline mb-0">
-            <li class="list-inline-item"><i class="list-icon-item fas fa-thumbs-up"></i> <span>{{ content.number_likes }}</span></li>
-            <li class="list-inline-item"><i class="list-icon-item fas fa-paperclip"></i> <span>{{ content.number_documents }}</span></li>
-          </ul>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <button type="button"><i class="fas fa-chevron-down"></i></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </a>
-  {% endfor %}
-  <div class="spacer"></div>
-</div>
-
-
+          <div class="card-body">
+            <div class="card-heading">
+              <h6 class="card-heading-title h5">{{ content.title }}</h6>
+              {% if content.has_details %}
+                <p class="card-heading-subtitle">By: {{ content.author }} on {{ content.date_published }}</p>
+              {% endif %}
+              {% if content.is_internal %}
+                <span class="badge badge-light">Internal</span>
+              {% endif %}
+            </div>
+            <p class="card-text">{{ content.summary }}</p>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex align-items-start align-items-center justify-content-between">
+              <ul class="list list-icon list-icon-default list-icon-left list-inline mb-0">
+                <li class="list-inline-item"><i class="list-icon-item fas fa-thumbs-up"></i> <span>{{ content.number_likes }}</span></li>
+                <li class="list-inline-item"><i class="list-icon-item fas fa-paperclip"></i> <span>{{ content.number_documents }}</span></li>
+              </ul>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <button type="button"><i class="fas fa-chevron-down"></i></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+      <div class="spacer"></div>
+    </div>
   </div>
 </div>
 
@@ -105,47 +102,50 @@ heading-title: Digital Transformation
 
 
 
+<div class="row card-section"> 
+  <div class="container">
+    <div class="subheading d-flex align-items-start align-items-start justify-content-between">
+      <p class="subheading-title">Featured Case Studies</p>
+      <a class="subheading-link" href="">More</a>
+    </div>
 
-<div class="subheading d-flex align-items-start align-items-start justify-content-between">
-  <p class="subheading-title">Featured Case Studies</p>
-  <a class="subheading-link" href="">More</a>
-</div>
-
-<div class="row card-scrollable">
-  {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_featured_case_studies" %}
-  {% for content in contents %}
-    <a class="card" href="{{ site.baseurl }}{{ content.url }}">
-      {% if content.image_url %}
-        <div class="card-img-wrapper">
-          <img class="card-img" src="{{ content.image_url }}" alt="" />
-        </div>
-      {% endif %}
-      <div class="card-body">
-        <div class="card-heading">
-          <h6 class="card-heading-title h5">{{ content.title }}</h6>
-          {% if content.has_details %}
-            <p class="card-heading-subtitle">By: {{ content.author }} on {{ content.date_published }}</p>
+    <div class="row card-scrollable">
+      {% assign contents = site.my-habitat | sort: "order" | where: "categories", "digital_transformation_featured_case_studies" %}
+      {% for content in contents %}
+        <a class="card" href="{{ site.baseurl }}{{ content.url }}">
+          {% if content.image_url %}
+            <div class="card-img-wrapper">
+              <img class="card-img" src="{{ content.image_url }}" alt="" />
+            </div>
           {% endif %}
-          {% if content.is_internal %}
-            <span class="badge badge-light">Internal</span>
-          {% endif %}
-        </div>
-        <p class="card-text">{{ content.summary }}</p>
-      </div>
-      <div class="card-footer">
-        <div class="d-flex align-items-start align-items-center justify-content-between">
-          <ul class="list list-icon list-icon-default list-icon-left list-inline mb-0">
-            <li class="list-inline-item"><i class="list-icon-item fas fa-thumbs-up"></i> <span>{{ content.number_likes }}</span></li>
-            <li class="list-inline-item"><i class="list-icon-item fas fa-paperclip"></i> <span>{{ content.number_documents }}</span></li>
-          </ul>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <button type="button"><i class="fas fa-chevron-down"></i></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </a>
-  {% endfor %}
-  <div class="spacer"></div>
+          <div class="card-body">
+            <div class="card-heading">
+              <h6 class="card-heading-title h5">{{ content.title }}</h6>
+              {% if content.has_details %}
+                <p class="card-heading-subtitle">By: {{ content.author }} on {{ content.date_published }}</p>
+              {% endif %}
+              {% if content.is_internal %}
+                <span class="badge badge-light">Internal</span>
+              {% endif %}
+            </div>
+            <p class="card-text">{{ content.summary }}</p>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex align-items-start align-items-center justify-content-between">
+              <ul class="list list-icon list-icon-default list-icon-left list-inline mb-0">
+                <li class="list-inline-item"><i class="list-icon-item fas fa-thumbs-up"></i> <span>{{ content.number_likes }}</span></li>
+                <li class="list-inline-item"><i class="list-icon-item fas fa-paperclip"></i> <span>{{ content.number_documents }}</span></li>
+              </ul>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <button type="button"><i class="fas fa-chevron-down"></i></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+      <div class="spacer"></div>
+    </div>
+  </div>
 </div>
