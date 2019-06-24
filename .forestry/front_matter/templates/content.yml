@@ -44,6 +44,7 @@ fields:
   default: []
   label: Categories
 pages:
+- _my-habitat/digital-transformation/featured-case-studies/scandinavian-airlines-sas.md
 - _my-habitat/digital-transformation/services-and-solutions/digital-agent-services.md
 - _my-habitat/digital-transformation/services-and-solutions/agile-process-automation.md
 - _my-habitat/digital-transformation/services-and-solutions/rapid-digital-delivery.md
