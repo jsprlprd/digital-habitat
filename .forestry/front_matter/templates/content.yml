@@ -44,6 +44,7 @@ fields:
   default: []
   label: Categories
 pages:
+- _my-habitat/digital-transformation/overview/the-recipe-for-digital-transformation-success.md
 - _my-habitat/digital-transformation/featured-case-studies/molson-coors-brewing-company.md
 - _my-habitat/digital-transformation/featured-case-studies/scandinavian-airlines-sas.md
 - _my-habitat/digital-transformation/services-and-solutions/digital-agent-services.md
