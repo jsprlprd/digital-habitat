@@ -1,19 +1,19 @@
 - text: Habitat
-  icon: material-icons
-  icon-text: home
+  icon: fas fa-home
+  icon-text: 
   url: my-habitat/
 
 - text: Pinboard
-  icon: material-icons
-  icon-text: dashboard
+  icon: fas fa-thumbtack
+  icon-text: 
   url: pinboard.html
 
 - text: Network
-  icon: material-icons
-  icon-text: people
+  icon: fas fa-user-friends
+  icon-text:
   url: network.html
 
 - text: Profile
-  icon: material-icons
-  icon-text: account_circle
+  icon: far fa-user-circle
+  icon-text:
   url: profile.html
